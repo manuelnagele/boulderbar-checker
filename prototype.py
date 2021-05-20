@@ -1,3 +1,5 @@
+#! /bin/python3
+
 from bs4 import BeautifulSoup
 import requests
 from urllib.parse import urlencode
@@ -19,6 +21,6 @@ output = []
 for location in locations:
     name = location.find('h2').get_text()
     amount = re.findall(AMOUNT_REGEX, str(location))[0]
-    output.append({name:amount})
+    output.append({'location':name, 'available':int(amount)})
 
 print(json.dumps(output,indent=2))
