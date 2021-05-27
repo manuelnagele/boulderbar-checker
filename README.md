@@ -1,3 +1,9 @@
+# What
+Due to the COVID pandemic access to boulderbar locations is limited.
+This script parses available slots at all viennese boulderbar locations.
+
+https://boulderbar.net
+
 # Example Telegraf Config
 ```
 [[inputs.exec]]
