@@ -4,6 +4,9 @@ This script parses available slots at all viennese boulderbar locations.
 
 https://boulderbar.net
 
+# Example Visualization
+![example visualization](https://github.com/manuelnagele/boulderbar-checker/blob/master/img/example_visualization.png?raw=true)
+
 # Example Telegraf Config
 ```
 [[inputs.exec]]
