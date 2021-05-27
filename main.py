@@ -2,10 +2,7 @@
 
 from bs4 import BeautifulSoup
 import requests
-from urllib.parse import urlencode
 import json
-import sqlite3
-import time
 import re
 
 
