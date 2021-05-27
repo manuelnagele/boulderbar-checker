@@ -5,11 +5,10 @@ import requests
 import json
 import re
 
-
-SEARCH_URL='https://shop.boulderbar.net:8080/modules/bbext/CurrentCustomer.php#no-back-button'
+URL='https://shop.boulderbar.net:8080/modules/bbext/CurrentCustomer.php#no-back-button'
 AMOUNT_REGEX = '(?:<br/>)([\s\S]*?)(?=<br/>)'
 
-page = requests.get(SEARCH_URL)
+page = requests.get(URL)
 soup = BeautifulSoup(page.content, 'html.parser')
 locations = soup.find_all('div', class_="progress-radial2")
 
